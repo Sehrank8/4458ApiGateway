@@ -1,6 +1,10 @@
 server:
   port: 8080
-
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.web.reactive.function.client: TRACE
+    reactor.netty.http.client: DEBUG
 spring:
   cloud:
     gateway:
@@ -8,24 +12,15 @@ spring:
         - id: admin-service
           uri: https://four458adminservice.onrender.com
           predicates:
-            - Path=/api/v1/admin/**
-          filters:
-            - StripPrefix=3
-
+            - Path=/api/v1/admin/jobs/**
         - id: job-search-service
           uri: https://four458jobsearchservice.onrender.com
           predicates:
             - Path=/api/v1/jobs/**
-          filters:
-            - StripPrefix=3
-
         - id: notification-service
           uri: https://four458notificationservice.onrender.com
           predicates:
             - Path=/api/v1/alerts/**
-          filters:
-            - StripPrefix=3
-
         - id: ai-agent-service
           uri: http://localhost:8000
           predicates:
