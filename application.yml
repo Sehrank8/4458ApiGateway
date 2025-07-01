@@ -9,14 +9,18 @@ spring:
           uri: https://four458adminservice.onrender.com
           predicates:
             - Path=/api/v1/admin/**
+
         - id: job-search-service
           uri: https://four458jobsearchservice.onrender.com
           predicates:
             - Path=/api/v1/jobs/**
+
         - id: notification-service
           uri: https://four458notificationservice.onrender.com
           predicates:
             - Path=/api/v1/alerts/**
+
+
         - id: ai-agent-service
           uri: http://localhost:8000
           predicates:
