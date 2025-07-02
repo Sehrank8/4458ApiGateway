@@ -93,6 +93,11 @@ docker run -p 8080:8080 api-gateway
 ```
 
 ---
+## 🧾 ER Diagram
+
+![ER DIAGRAM](https://github.com/Sehrank8/4458ApiGateway/blob/master/job_search_er_diagram.png)
+
+---
 
 ## 🧩 Problems Encountered
 
@@ -100,14 +105,12 @@ docker run -p 8080:8080 api-gateway
 - Dockerfiles were redone 5 times
 - I am bad at frontend
 - Gateway configuration needed to be changed 15-20 times before it could work
-- AI agent started writing poems for some reason?
 - CORS error from frontend
 - Deployed instance of my repos had a problem with the vhost of rabbitMQ, they defaulted to `/` instead of the set value
+- AI agent started writing poems for some reason?
+
+![AI POEMS](https://github.com/Sehrank8/4458ApiGateway/blob/master/AI_POEM.jpg)
   
 ---
 
-## 🧾 ER Diagram
 
-![ER DIAGRAM](https://github.com/Sehrank8/4458ApiGateway/blob/master/job_search_er_diagram.png)
-
----
