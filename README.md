@@ -96,12 +96,18 @@ docker run -p 8080:8080 api-gateway
 
 ## 🧩 Problems Encountered
 
-- CORS misconfiguration can lead to 500 errors if `allowedOrigins` is set to `*` while `allowCredentials=true`. Used `allowedOriginPatterns` instead.
-
+- CORS misconfiguration can lead to HTTP500 errors if `allowedOrigins` is set to `*` while `allowCredentials=true`. Used `allowedOriginPatterns` instead.
+- Dockerfiles were redone 5 times
+- I am bad at frontend
+- Gateway configuration needed to be changed 15-20 times before it could work
+- AI agent started writing poems for some reason?
+- CORS error from frontend
+- Deployed instance of my repos had a problem with the vhost of rabbitMQ, they defaulted to `/` instead of the set value
+  
 ---
 
 ## 🧾 ER Diagram
 
-This module doesn't maintain a database. It routes requests to other services that manage their own databases.
+![ER DIAGRAM](https://github.com/Sehrank8/4458ApiGateway/blob/master/job_search_er_diagram.png)
 
 ---
