@@ -25,9 +25,9 @@ spring:
           predicates:
             - Path=/api/v1/alerts/**
         - id: ai-agent-service
-          uri: http://localhost:8000
+          uri: https://four458jobagent.onrender.com
           predicates:
-            - Path=/agent
+            - Path=/api/v1/agent
 
 management:
   endpoints:
