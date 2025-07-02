@@ -12,7 +12,7 @@ This repository contains the API Gateway for the **SE4458 Final Project** – a 
 
 ## 🔗 Final Deployed URLs
 
-- **Frontend Application**
+- [**Frontend Application**](https://four458frontend.onrender.com)
 - [**API Gateway**](https://four458aiagent.onrender.com)
 - [**Admin Service**](https://four458adminservice.onrender.com)
 - [**Job Search Service**](https://four458jobsearchservice.onrender.com)
