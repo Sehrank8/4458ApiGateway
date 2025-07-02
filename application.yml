@@ -2,9 +2,12 @@ server:
   port: ${PORT:8080}
 logging:
   level:
+    root: INFO
     org.springframework.cloud.gateway: DEBUG
     org.springframework.web.reactive.function.client: TRACE
     reactor.netty.http.client: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
 spring:
   cloud:
     gateway:
@@ -25,3 +28,12 @@ spring:
           uri: http://localhost:8000
           predicates:
             - Path=/agent
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,gateway
+  endpoint:
+    health:
+      show-details: always
