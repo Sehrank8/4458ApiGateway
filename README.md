@@ -4,12 +4,6 @@ This repository contains the API Gateway for the **SE4458 Final Project** – a 
 
 ---
 
-## 📹 Demo Video
-
-[**VIDEO LINK**](https://drive.google.com/drive/folders/1JRjiEz0hcjbIAbnUIZd1u3qLuDfy4Lwg?usp=sharing)
-
----
-
 ## 🔗 Final Deployed URLs
 
 - [**Frontend Application**](https://four458frontend.onrender.com)
